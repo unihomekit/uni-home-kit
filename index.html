@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Uni Home Kit - The ultimate university essentials package for international students in Australia. Next day delivery available." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Uni Home Kit | Essentials for New Melburnians</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <img src="/logo.png" alt="Uni Home Kit Logo" class="logo-img">
+        <!-- Optional text if logo text is too small, but logo has text so maybe just image or image + text -->
+        <!-- We'll keep text structure for SEO but maybe hide it or style it nicely next to logo -->
+        <div class="logo-text">uni <span style="color: var(--color-accent)">home kit</span></div>
+      </div>
+      <button id="lang-toggle" class="lang-switch">
+        <span class="lang-en">View in Chinese / 中文</span>
+        <span class="lang-zh hidden">Switch to English / 英文</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="/hero-bg.png" alt="Dorm room" class="hero-bg">
+      <div class="hero-content glass fade-in-up">
+        <h1>
+          <span class="lang-en">Settling into Uni made simple</span>
+          <span class="lang-zh hidden">轻松安家，专注学业</span>
+        </h1>
+        <p class="subtitle">
+          <span class="lang-en">Everything you need to start your Australian university life in one box.</span>
+          <span class="lang-zh hidden">一箱搞定！澳洲留学生活的所有必备品。</span>
+        </p>
+        <a href="#contact" class="btn btn-primary">
+          <span class="lang-en">Get Started</span>
+          <span class="lang-zh hidden">立即开始</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="section">
+      <div class="container product-grid">
+        <div class="product-info fade-in-up">
+          <div class="price-tag">$199 AUD</div>
+          <h2 style="color: var(--color-primary); margin-bottom: 1rem;">
+            <span class="lang-en">The Uni Essentials Package</span>
+            <span class="lang-zh hidden">留学生活超值套装</span>
+          </h2>
+          <p style="margin-bottom: 2rem; color: var(--color-text-muted);">
+            <span class="lang-en">A complete set of daily necessities to get you started.</span>
+            <span class="lang-zh hidden">全套日用必需品，助您快速开启新生活。</span>
+          </p>
+
+          <ul class="features-list">
+            <li>
+              <span class="lang-en">Full Kitchen Set (Pots, Pans, Utensils)</span>
+              <span class="lang-zh hidden">厨房用品全套（锅具、餐具、厨具）</span>
+            </li>
+            <li>
+              <span class="lang-en">Toiletries Set (Shampoo, Body Wash, Toilet Paper)</span>
+              <span class="lang-zh hidden">洗漱用品套装（洗发水、沐浴露、卷纸）</span>
+            </li>
+            <li>
+              <span class="lang-en">Bedding Set (Sheets, Pillow case)</span>
+              <span class="lang-zh hidden">床上用品套装（床单、枕套）</span>
+            </li>
+            <li>
+              <span class="lang-en">Dining Set (Plates, Bowls, Mug)</span>
+              <span class="lang-zh hidden">餐饮具套装（餐盘、碗、马克杯）</span>
+            </li>
+          </ul>
+
+          <div class="glass delivery-card fade-in-up delay-200">
+            <div class="delivery-badge">
+              <i class="fa-solid fa-bolt"></i>
+              <span class="lang-en">Fast Delivery</span>
+              <span class="lang-zh hidden">极速送达</span>
+            </div>
+            <h3 style="color: var(--color-text);">
+              <span class="lang-en">Need it tomorrow?</span>
+              <span class="lang-zh hidden">急需用品？</span>
+            </h3>
+            <p style="color: var(--color-text-muted);">
+              <span class="lang-en">Add Next Day Delivery (Order before 5pm) for just +$50.</span>
+              <span class="lang-zh hidden">下午5点前下单，次日送达！仅需 +$50。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="product-image-container fade-in-up delay-100">
+          <div class="product-gallery">
+            <img id="main-product-img" src="/product-box-1.jpg" alt="Uni Home Kit Box" class="product-main-img">
+            <div class="product-thumbs">
+              <img src="/product-box-1.jpg" onclick="changeImage(this.src)" class="thumb active" alt="View 1">
+              <img src="/product-box-2.jpg" onclick="changeImage(this.src)" class="thumb" alt="View 2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio/About Section -->
+    <section class="section bio">
+      <div class="container">
+        <div class="glass card bio-content fade-in-up">
+          <i class="fa-solid fa-graduation-cap card-icon" style="color: var(--color-primary);"></i>
+          <h2 style="color: var(--color-primary);">
+            <span class="lang-en">By Students, For Students</span>
+            <span class="lang-zh hidden">源于学生，服务学生</span>
+          </h2>
+          <p style="color: var(--color-text);">
+            <br>
+            <span class="lang-en">We know how stressful moving to a new country can be. Uni Home Kit was started by
+              former international students to make your transition to Australia as smooth as possible. We focus on
+              convenience and peace of mind.</span>
+            <span class="lang-zh hidden">我们深知来到一个陌生国度的不易。Uni Home Kit
+              由前澳洲留学生创办，致力于为您提供最顺畅的安家体验。我们专注于便捷与安心，让您只有期待，没有烦恼。</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container" style="text-align: center;">
+        <div class="contact-card glass fade-in-up">
+          <h2 style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--color-primary);">
+            <span class="lang-en">Get in Touch</span>
+            <span class="lang-zh hidden">联系我们</span>
+          </h2>
+
+          <div class="contact-methods">
+            <!-- WeChat QR -->
+            <div class="contact-item">
+              <img src="/wechat-qr.png" alt="WeChat QR Code" class="qr-code">
+              <p style="margin-top: 1rem; font-weight: 600;">
+                <span class="lang-en">Scan to chat on WeChat</span>
+                <span class="lang-zh hidden">扫描二维码添加微信</span>
+              </p>
+            </div>
+
+            <!-- Direct Contact Info -->
+            <div class="contact-info-list"
+              style="text-align: left; display: inline-block; vertical-align: top; margin-top: 1rem;">
+              <div class="info-row">
+                <i class="fa-solid fa-phone" style="color: var(--color-accent);"></i>
+                <a href="tel:+61493165747" style="margin-left: 10px;">+61 493 165 747</a>
+              </div>
+              <div class="info-row" style="margin-top: 1rem;">
+                <i class="fa-regular fa-envelope" style="color: var(--color-accent);"></i>
+                <a href="mailto:unihomekit@gmail.com" style="margin-left: 10px;">unihomekit@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Uni Home Kit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    // Simple image gallery logic
+    window.changeImage = function (src) {
+      document.getElementById('main-product-img').src = src;
+      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
