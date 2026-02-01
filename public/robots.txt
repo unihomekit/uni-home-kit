@@ -1,11 +1,11 @@
 # Robots.txt for UniHome Kit
-# https://uni-home-kit.au
+# https://www.uni-home-kit.au
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://uni-home-kit.au/sitemap.xml
+Sitemap: https://www.uni-home-kit.au/sitemap.xml
 
 # Disallow common non-content paths
 Disallow: /src/
