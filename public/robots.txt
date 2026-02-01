@@ -1,0 +1,12 @@
+# Robots.txt for UniHome Kit
+# https://uni-home-kit.vercel.app
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://uni-home-kit.vercel.app/sitemap.xml
+
+# Disallow common non-content paths
+Disallow: /src/
+Disallow: /*.js$
