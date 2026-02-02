@@ -61,6 +61,54 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css" />
 
+  <!-- Structured Data - Organization Schema (for logo in search results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "UniHome Kit",
+    "alternateName": "Uni Home Kit",
+    "url": "https://www.uni-home-kit.au/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.uni-home-kit.au/logo.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": "https://www.uni-home-kit.au/logo.png",
+    "description": "University essentials package for international students in Melbourne, Australia",
+    "email": "unihomekit@gmail.com",
+    "telephone": "+61493165747",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Melbourne",
+      "addressRegion": "VIC",
+      "addressCountry": "AU"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Structured Data - WebSite Schema (for site search and branding) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "UniHome Kit",
+    "alternateName": "Uni Home Kit",
+    "url": "https://www.uni-home-kit.au/",
+    "description": "University essentials package for international students in Melbourne, Australia",
+    "publisher": {
+      "@type": "Organization",
+      "name": "UniHome Kit",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.uni-home-kit.au/logo.png"
+      }
+    }
+  }
+  </script>
+
   <!-- Structured Data - LocalBusiness + Product Schema -->
   <script type="application/ld+json">
   {
